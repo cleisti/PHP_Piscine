@@ -19,6 +19,7 @@
 				width: 5%;
 				height: 5%;
 				font-family: Courier New;
+				font-weight: bold;
 				color: white;
 				font-size: 15px;
 			}
@@ -34,16 +35,46 @@
 				color: white;
 			}
 			.nonmetal {
-				border: 1px solid #55FF00;
-				color: #55FF00;
+				border: 1px solid #FFEEDF;
+				color: #FFEEDF;
 			}
 			.alkalim {
-				border: 1px solid #FFFF00;
-				color: #FFFF00;
+				border: 1px solid #FFD9B8;
+				color: #FFD9B8;
 			}
 			.alkalie {
-				border: 1px solid #FF5500;
-				color: #FF5500;
+				border: 1px solid #FFC38E;
+				color: #FFC38E;
+			}
+			.rare {
+				border: 1px solid #FFB16D;
+				color: #FFB16D;
+			}
+			.trans {
+				border: 1px solid #FF9E48;
+				color: #FF9E48;
+			}
+			.other {
+				border: 1px solid #FF902E;
+				color: #FF902E;
+			}
+			.halogen {
+				border: 1px solid #FF861A;
+				color: #FF861A;
+			}
+			.noble {
+				border: 1px solid #FF7800;
+				color: #FF7800;
+			}
+			.actinoid {
+				border: 1px solid #CE6100;
+				color: #CE6100;
+			}
+			.num {
+				text-align: left;
+				font-weight: normal;
+				bottom: 0;
+				left: 0;
 			}
 		</style>
 	</head>
@@ -72,7 +103,7 @@
 		</tr>
 		<tr>
 			<th class="upper">1</th class="upper">
-			<th class="nonmetal">H</th>
+			<th class="nonmetal">H<p class="num">1</p></th>
 			<th class="empty"></th>
 			<th class="empty"></th class="empty">
 			<th class="empty"></th>
@@ -89,7 +120,7 @@
 			<th class="empty"></th class="empty">
 			<th class="empty"></th class="empty">
 			<th class="empty"></th class="empty">
-			<th>He</th>
+			<th class="noble">He</th>
 		</tr>
 		<tr>
 			<th class="upper">2</th>
@@ -105,12 +136,12 @@
 			<th class="empty"></th class="empty">
 			<th class="empty"></th>
 			<th class="empty"></th class="empty">
-			<th>B</th>
+			<th class="nonmetal">B</th>
 			<th class="nonmetal">C</th>
 			<th class="nonmetal">N</thclass="nonmetal">
 			<th class="nonmetal">O</th>
-			<th>F</th>
-			<th>Ne</th>
+			<th class="halogen">F</th>
+			<th class="noble">Ne</th>
 		</tr>
 		<tr>
 			<th class="upper">3</th class="upper">
@@ -126,116 +157,137 @@
 			<th class="empty"></th class="empty">
 			<th class="empty"></th class="empty">
 			<th class="empty"></th class="empty">
-			<th>Al</th>
-			<th>Si</th>
+			<th class="other">Al</th>
+			<th class="nonmetal">Si</th>
 			<th class="nonmetal">P</th>
 			<th class="nonmetal">S</th>
-			<th>Cl</th>
-			<th>Ar</th>
+			<th class="halogen">Cl</th>
+			<th class="noble">Ar</th>
 		</tr>
 		<tr>
 			<th class="upper">4</th class="upper">
 			<th class="alkalim">K</th class="alkalim">
 			<th class="alkalie">Ca</th class="alkalie">
-			<th>Sc</th>
-			<th>Ti</th>
-			<th>V</th>
-			<th>Cr</th>
-			<th>Mn</th>
-			<th>Fe</th>
-			<th>Co</th>
-			<th>Ni</th>
-			<th>Cu</th>
-			<th>Zn</th>
-			<th>Ga</th>
-			<th>Ge</th>
-			<th>As</th>
+			<th class="rare">Sc</th>
+			<th class="trans">Ti</th>
+			<th class="trans">V</th>
+			<th class="trans">Cr</th>
+			<th class="trans">Mn</th>
+			<th class="trans">Fe</th>
+			<th class="trans">Co</th>
+			<th class="trans">Ni</th>
+			<th class="trans">Cu</th>
+			<th class="trans">Zn</th>
+			<th class="other">Ga</th>
+			<th class="other">Ge</th>
+			<th class="nonmetal">As</th>
 			<th class="nonmetal">Se</th>
-			<th>Br</th>
-			<th>Kr</th>
+			<th class="halogen">Br</th>
+			<th class="noble">Kr</th>
 		</tr>
 		<tr>
 			<th class="upper">5</th class="upper">
 			<th class="alkalim">Rb</th class="alkalim">
 			<th class="alkalie">Sr</th class="alkalie">
-			<th>Y</th>
-			<th>Zr</th>
-			<th>Nb</th>
-			<th>Mo</th>
-			<th>Tc</th>
-			<th>Ru</th>
-			<th>Rh</th>
-			<th>Pd</th>
-			<th>Ag</th>
-			<th>Cd</th>
-			<th>In</th>
-			<th>Sn</th>
-			<th>Sb</th>
-			<th>Te</th>
-			<th>I</th>
-			<th>Xe</th>
+			<th class="rare">Y</th>
+			<th class="trans">Zr</th>
+			<th class="trans">Nb</th>
+			<th class="trans">Mo</th>
+			<th class="trans">Tc</th>
+			<th class="trans">Ru</th>
+			<th class="trans">Rh</th>
+			<th class="trans">Pd</th>
+			<th class="trans">Ag</th>
+			<th class="trans">Cd</th>
+			<th class="other">In</th>
+			<th class="other">Sn</th>
+			<th class="other">Sb</th>
+			<th class="nonmetal">Te</th>
+			<th class="halogen">I</th>
+			<th class="noble">Xe</th>
 		</tr>
 		<tr>
 			<th class="upper">6</th class="upper">
 			<th class="alkalim">Cs</th class="alkalim">
 			<th class="alkalie">Ba</th class="alkalie">
-			<th>La</th>
-			<th>Hf</th>
-			<th>Ta</th>
-			<th>W</th>
-			<th>Re</th>
-			<th>Os</th>
-			<th>Ir</th>
-			<th>Pt</th>
-			<th>Au</th>
-			<th>Hg</th>
-			<th>Tl</th>
-			<th>Pb</th>
-			<th>Bi</th>
-			<th>Po</th>
-			<th>At</th>
-			<th>Rn</th>
+			<th class="rare">La</th>
+			<th class="trans">Hf</th>
+			<th class="trans">Ta</th>
+			<th class="trans">W</th>
+			<th class="trans">Re</th>
+			<th class="trans">Os</th>
+			<th class="trans">Ir</th>
+			<th class="trans">Pt</th>
+			<th class="trans">Au</th>
+			<th class="trans">Hg</th>
+			<th class="other">Tl</th>
+			<th class="other">Pb</th>
+			<th class="other">Bi</th>
+			<th class="other">Po</th>
+			<th class="halogen">At</th>
+			<th class="noble">Rn</th>
 		</tr>
 		<tr>
 			<th class="upper">7</th class="upper">
 			<th class="alkalim">Fr</th class="alkalim">
 			<th class="alkalie">Ra</th class="alkalie">
-			<th>Ac</th>
-			<th>Rf</th>
-			<th>Db</th>
-			<th>Sg</th>
-			<th>Bh</th>
-			<th>Hs</th>
-			<th>Mt</th>
-			<th>Ds</th>
-			<th>Rg</th>
-			<th>Cn</th>
-			<th>Nh</th>
-			<th>Fl</th>
-			<th>Mc</th>
-			<th>Lv</th>
-			<th>Ts</th>
-			<th>Og</th>
+			<th class="actinoid">Ac</th>
+			<th class="trans">Rf</th>
+			<th class="trans">Db</th>
+			<th class="trans">Sg</th>
+			<th class="trans">Bh</th>
+			<th class="trans">Hs</th>
+			<th class="trans">Mt</th>
+			<th class="trans">Ds</th>
+			<th class="trans">Rg</th>
+			<th class="trans">Cn</th>
+			<th class="other">Nh</th>
+			<th class="other">Fl</th>
+			<th class="other">Mc</th>
+			<th class="other">Lv</th>
+			<th class="halogen">Ts</th>
+			<th class="noble">Og</th>
+		</tr>
+		<tr>
+			<th class="upper"></th>
+			<th class="upper"></th>
+			<th class="upper"></th class="upper">
+			<th class="upper"></th class="upper">
+			<th class="upper"></th class="upper">
+			<th class="upper"></th class="upper">
+			<th class="upper"></th class="upper">
+			<th class="upper"></th class="upper">
+			<th class="upper"></th class="upper">
+			<th class="upper"></th class="upper">
+			<th class="upper"></th class="upper">
+			<th class="upper"></th class="upper">
+			<th class="upper"></th class="upper">
+			<th class="upper"></th class="upper">
+			<th class="upper"></th class="upper">
+			<th class="upper"></th class="upper">
+			<th class="upper"></th class="upper">
+			<th class="upper"></th class="upper">
+			<th class="upper"></th class="upper">
 		</tr>
 		<tr>
 			<th class="empty"></th class="empty">
 			<th class="empty"></th class="empty">
 			<th class="empty"></th>
 			<th class="empty"></th class="empty">
-			<th>Ce</th>
-			<th>Pr</th>
-			<th>Nd</th>
-			<th>Pm</th>
-			<th>Sm</th>
-			<th>Eu</th>
-			<th>Gd</th>
-			<th>Tb</th>
-			<th>Dy</th>
-			<th>Ho</th>
-			<th>Er</th>
-			<th>Tm</th>
-			<th>Yb</th>
-			<th>Lu</th>
+			<th class="rare">Ce</th>
+			<th class="rare">Pr</th>
+			<th class="rare">Nd</th>
+			<th class="rare">Pm</th>
+			<th class="rare">Sm</th>
+			<th class="rare">Eu</th>
+			<th class="rare">Gd</th>
+			<th class="rare">Tb</th>
+			<th class="rare">Dy</th>
+			<th class="rare">Ho</th>
+			<th class="rare">Er</th>
+			<th class="rare">Tm</th>
+			<th class="rare">Yb</th>
+			<th class="rare">Lu</th>
 			<th class="empty"></th class="empty">
 		</tr>
 		<tr>
@@ -243,20 +295,20 @@
 			<th class="empty"></th class="empty">
 			<th class="empty"></th class="empty">
 			<th class="empty"></th class="empty">
-			<th>Th</th>
-			<th>Pa</th>
-			<th>U</th>
-			<th>Np</th>
-			<th>Pu</th>
-			<th>Am</th>
-			<th>Cm</th>
-			<th>Bk</th>
-			<th>Cf</th>
-			<th>Es</th>
-			<th>Fm</th>
-			<th>Md</th>
-			<th>No</th>
-			<th>Lr</th>
+			<th class="actinoid">Th</th>
+			<th class="actinoid">Pa</th>
+			<th class="actinoid">U</th>
+			<th class="actinoid">Np</th>
+			<th class="actinoid">Pu</th>
+			<th class="actinoid">Am</th>
+			<th class="actinoid">Cm</th>
+			<th class="actinoid">Bk</th>
+			<th class="actinoid">Cf</th>
+			<th class="actinoid">Es</th>
+			<th class="actinoid">Fm</th>
+			<th class="actinoid">Md</th>
+			<th class="actinoid">No</th>
+			<th class="actinoid">Lr</th>
 			<th class="empty"></th class="empty">
 		</tr>
 	</table>
