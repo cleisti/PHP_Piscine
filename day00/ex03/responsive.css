@@ -1,0 +1,98 @@
+body {
+	background-color: black;
+	text-align: center;
+}
+h1 {
+	color: #CE6100;
+	text-shadow: 0 0 1px white, 0 0 0;
+	font-family: Courier New;
+}
+.container {
+	display: grid;
+	grid-template-columns: auto;
+	grid-template-rows: 50px;
+	max-width: 80%;
+	display: block;
+	position: relative;
+	margin: auto;
+}
+table {
+	width: 100%;
+	margin: auto;
+	color: white;
+}
+tr {
+	max-width: 100%;
+
+}
+td {
+	width: 5,26%;
+	height: 100%;
+	font-family: Courier New;
+}
+th {
+	color: #CE6100;
+	font-family: Courier New;
+	width: 5.5%px;
+	height: 20px;
+}
+.empty {
+	border: 0px;
+}
+.upper {
+	color: white;
+}
+.nonmetal {
+	border: 1px solid #FFEEDF;
+}
+.alkalim {
+	border: 1px solid #FFD9B8;
+}
+.alkalie {
+	border: 1px solid #FFC38E;
+}
+.rare {
+	border: 1px solid #FFB16D;
+}
+.trans {
+	border: 1px solid #FF9E48;
+}
+.other {
+	border: 1px solid #FF902E;
+}
+.halogen {
+	border: 1px solid #FF861A;
+}
+.noble {
+	border: 1px solid #FF7800;
+}
+.actinoid {
+	border: 1px solid #CE6100;
+}
+.name {
+	text-align: center;
+	font-weight: bold;
+	font-size: 20px;
+	margin: 5px 0 10px;
+	color: #CE6100;
+	text-shadow: 0 0 1px white, 0 0 0;
+}
+.num {
+	float: left;
+	font-size: 8px;
+	line-height: 0px;
+	margin: 3px;
+}
+.mass {
+	float: right;
+	font-size: 8px;
+	line-height: 0px;
+	margin: 3px;
+}
+.imgsize {
+	width: 200px;
+	height: auto;
+	border: 1px solid white;
+	margin: auto;
+	padding: auto;
+}

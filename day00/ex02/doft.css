@@ -1,0 +1,133 @@
+body {
+	background-color: #505050;
+	position: relative;
+}
+.container {
+	width: 100%;
+	display: block;
+	position: relative;
+	float: left;
+}
+.header {
+	background-color: #909090;
+	width: 75%;
+	height: 135px;
+	border-radius: 9px;
+	margin: 12px auto 20px;
+	box-shadow: 10px 10px 8px;
+	position: relative;
+}
+.doft {
+	height: 80%;
+	float: left;
+	margin: 10px;
+}
+.reload {
+	position: absolute;
+	top: 0;
+	right: 0;
+	height: 20px;
+	margin: 10px;
+}
+.close {
+	position: absolute;
+	bottom: 0;
+	right: 0;
+	height: 20px;
+	margin: 10px;
+}
+.loupe {
+	position: absolute;
+	bottom: -20px;
+	right: 30px;
+	margin: auto;
+}
+.left-bar {
+	background-color: #909090;
+	width: 7.5%;
+	height: 430px;
+	margin: 0 0 60px 14%;
+	position: relative;
+	border-radius: 9px;
+	box-shadow: 10px 10px 8px;
+	float: left;
+}
+.arrow {
+	margin: 10% 25% 5%;
+	height: 70px;
+}
+.main {
+	margin: auto 25% auto;
+	height: 70px;
+}
+.oeil {
+	margin: auto 20% auto;
+	height: 70px;
+	border: 5px solid red;
+	border-radius: 4px;
+}
+.outil {
+	margin: auto 25% auto;
+	height: 72px;
+}
+.chat {
+	margin: auto 25% auto;
+	height: 68px;
+}
+.middle {
+	background-color: #909090;
+	width: 54%;
+	height: 600px;
+	margin: 0 30px 60px 30px;
+	position: relative;
+	border-radius: 9px;
+	box-shadow: 10px 10px 8px;
+	float: left;
+	text-align: center;
+}
+.link {
+	display: block;
+	width: 100px;
+	height: 100px;
+	position: absolute;
+}
+.right-bar {
+	background-color: #909090;
+	width: 7.5%;
+	height: 430px;
+	margin: 0 12% 60px 0;
+	position: relative;
+	border-radius: 9px;
+	box-shadow: 10px 10px 8px;
+	float: left;
+	text-align: center;
+}
+.book {
+	margin: 10% 20% 5%;
+}
+.towel {
+	margin: 5% 20% 5%;
+}
+.brick {
+	background-image: url("resources/brick.jpg");
+	height: 16%;
+	width: 84%;
+	margin: auto;
+	position: relative;
+}
+.popup {
+	background-color: #88FF88;
+	position: absolute;
+	top: 680px;
+	left: 180px;
+	width: 27%;
+	height: 175px;
+	border-radius: 9px;
+	box-shadow: 10px 10px 8px;
+}
+p {
+	float: left;
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
+	font-size: 16px;
+	margin: 5px 10px 0px 10px;
+}
