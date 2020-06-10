@@ -9,11 +9,6 @@
 		$array = array_merge($array, $several);
 		$x++;
 	}
-	// sort($array);
-	// $i = count($array);
-	// for ($x = 0; $x < $i; $x++)
-	// 	echo "$array[$x]\n";
-
 
 	$alpha = array();
 	$number = array();
@@ -29,8 +24,7 @@
 		else
 			array_push($other, $array[$x]);
 	}
-	// natcasesort($alpha);
-	sort($alpha, SORT_NATURAL);
+	natcasesort($alpha);
 	sort($number, SORT_STRING);
 	sort($other);
 	$final = array();
