@@ -17,7 +17,7 @@
 	$i = count($array);
 	for ($x = 0; $x < $i; $x++)
 	{
-		if (($array[$x][0] >= A && $array[$x][0] <= Z) || ($array[$x][0] >= a && $array[$x][0] <= z))
+		if (($array[$x][0] >= 'A' && $array[$x][0] <= 'Z') || ($array[$x][0] >= 'a' && $array[$x][0] <= 'z'))
 			array_push($alpha, $array[$x]);
 		else if ($array[$x][0] >= '0' && $array[$x][0] <= '9')
 			array_push($number, $array[$x]);
