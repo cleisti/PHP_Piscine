@@ -71,12 +71,15 @@ function more_time($str)
 	
 	return $final;
 }
-	if (!$arr = more_time($argv[1]))
+	if ($argc == 2)
 	{
-		echo "Wrong Format\n";
-		exit ;
+		if (!$arr = more_time($argv[1]))
+		{
+			echo "Wrong Format\n";
+			exit ;
+		}
+		$timestr = implode(' ', $arr);
+		$time = strtotime($timestr) - 3600;
+		echo "$time\n";
 	}
-	$timestr = implode(' ', $arr);
-	$time = strtotime($timestr) - 3600;
-	echo $time;
 ?>

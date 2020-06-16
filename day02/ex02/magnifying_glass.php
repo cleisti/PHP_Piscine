@@ -1,5 +1,5 @@
 #!/usr/bin/php
-<?PHP
+<?php
 function upper($matches)
 {
     return (str_replace($matches[1], strtoupper($matches[1]), $matches[0]));
