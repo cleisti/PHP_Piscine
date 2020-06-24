@@ -15,5 +15,5 @@
 		print "\n";
 	}
 	else
-		echo "Incorrect Parameters\n";
+		exit("Incorrect Parameters\n");
 ?>
