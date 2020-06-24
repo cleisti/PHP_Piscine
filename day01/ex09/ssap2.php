@@ -1,5 +1,7 @@
 #!/usr/bin/php
 <?php
+if ($argc > 1)
+{
 	$array = array();
 	$i = count($argv);
 	$x = 1;
@@ -9,11 +11,9 @@
 		$array = array_merge($array, $several);
 		$x++;
 	}
-
 	$alpha = array();
 	$number = array();
 	$other = array();
-
 	$i = count($array);
 	for ($x = 0; $x < $i; $x++)
 	{
@@ -32,4 +32,5 @@
 	$i = count($final);
 	for ($x = 0; $x < $i; $x++)
 		echo "$final[$x]\n";
+}
 ?>

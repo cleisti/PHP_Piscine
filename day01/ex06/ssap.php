@@ -1,5 +1,7 @@
 #!/usr/bin/php
 <?php
+if ($argc > 1)
+{
 	$array = array();
 	$i = count($argv);
 	$x = 1;
@@ -13,4 +15,5 @@
 	$i = count($array);
 	for ($x = 0; $x < $i; $x++)
 		echo "$array[$x]\n";
+}
 ?>
