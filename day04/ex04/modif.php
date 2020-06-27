@@ -1,11 +1,6 @@
 <?php
 header("Location: index.html");
 
-function error()
-{
-    echo "ERROR\n";
-    exit;
-}
 if ($_POST['submit'] === 'OK' && $_POST['newpw'])
 {
     $filename = '../private/passwd';
@@ -31,5 +26,6 @@ if ($_POST['submit'] === 'OK' && $_POST['newpw'])
         $i++;
     }
 }
-error();
+else
+    exit("ERROR\n");
 ?>
