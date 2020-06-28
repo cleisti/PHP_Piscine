@@ -1,7 +1,5 @@
 <?php
 require_once 'auth.php';
-// require_once 'chat.php';
-require_once 'speak.php';
 session_start();
 
 if (auth($_POST['login'], $_POST['passwd']) === TRUE)
@@ -17,7 +15,7 @@ if (auth($_POST['login'], $_POST['passwd']) === TRUE)
 }
 else
 {
-    $_SESSION['logged_on_user'] = "";
-    echo "ERROR\n";
+    $_SESSION['logged_on_user'] = '';
+    echo "User not logged in\n";
 }
 ?>

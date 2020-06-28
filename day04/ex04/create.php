@@ -15,34 +15,22 @@ if ($_POST['submit'] === 'OK')
         {
             $str = file_get_contents($filename);
             $array = unserialize($str);
-            $len = count($array);
             foreach ($array as $key => $value)
             {
                 if ($value['login'] === $login)
-                {
-                    echo "ERROR\n";
-                    exit;
-                }
+                    exit("ERROR\n");
             }
         }
-        if (!$len)
-            $len = 0;
-        $array[$len]['login'] = $login;
-        $array[$len]['passwd'] = $passwd;
+        $info['login'] = $login;
+        $info['passwd'] = $passwd;
+        $array[] = $info;
         $data = serialize($array);
         file_put_contents($filename, $data);
         echo "OK\n";
     }
     else
-    {
-        echo "ERROR\n";
-        exit;
-    }
+        exit("ERROR\n");
 }
 else
-{    
-    echo "ERROR\n";
-    exit;
-}
-exit;
+    exit("ERROR\n");
 ?>
