@@ -1,1 +1,1 @@
-CREATE DATABASE cleisti_db;
+CREATE DATABASE db_cleisti;
