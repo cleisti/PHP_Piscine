@@ -1,55 +1,59 @@
 <?php
 class Color {
-	public static $verbose = 0;
-	public $red = 0;
-	public $green = 0;
-	public $blue = 0;
-	private $_test = 5;
+    public $red;
+    public $green;
+    public $blue;
+    static $verbose = FALSE;
 
-	public function getAtt() {
-		return $this->_test;
+    public function __construct($array)
+    {
+        if ($array['rgb'])
+        {
+            $rgb = intval($array['rgb']);
+            $this->red = ($rgb >> 16) & 0xFF;
+            $this->green = ($rgb >> 8) & 0xFF;
+            $this->blue = ($rgb & 0xFF);
+        }
+        else if ($array['red'] && $array['green'] && $array['blue'])
+        {
+            $this->red = intval($array['red']);
+            $this->green = intval($array['green']);
+            $this->blue = intval($array['blue']);
+        }
+        if (self::$verbose)
+            print($this . ' constructed.' . PHP_EOL);
+    }
+
+    public function __destruct()
+    {
+        if (self::verbose)
+            print($this . ' destructed.' . PHP_EOL);
+    }
+
+    public function __toString()
+    {
+		return (sprintf("Color( red: %3d, green: %3d, blue: %3d )", $this->red, $this->green, $this->blue));
+    }
+
+    public static function doc()
+    {
+		if ($str = file_get_contents('Color.doc.txt'))
+			return ($str);
+	}
+	
+	public function add( Color $rhs)
+	{
+
 	}
 
-	public function setAtt($v) {
-		$this->_test = $v;
-		return;
+	public function sub( Color $rhs )
+	{
+
 	}
 
-	public function __construct( array $arr) {
-		print( 'Constructor called' . PHP_EOL);
-		$this->setAtt( $arr['arg'] );
-		self::$verbose++;
-		return;
-	}
+	public function mult( $f )
+	{
 
-	public function __destruct() {
-		print( 'Destructor called' . PHP_EOL );
-		self::$verbose--;
-		print( 'nb of instances: ' . Color::$verbose . PHP_EOL);
-		return;
-	}
-
-	public static function doc() {
-		if ($str = file_get_contents('Color.doc.txt')) {
-			echo "$str";
-		}
-		else {
-			echo "Error: .doc file doesn't exist.\n";
-		}
-	}
-
-	public function __tostring() {
-		return 'Color( $_test = ' . $this->getAtt() . ' )';
 	}
 }
-
-print( 'nb of instances: ' . Color::$verbose . PHP_EOL);
-$c = new Color( array( 'arg' => 42) );
-print( $c . PHP_EOL);
-print( 'nb of instances: ' . Color::$verbose . PHP_EOL);
-$c2 = new Color( array( 'arg' => 42) );
-print( 'nb of instances: ' . Color::$verbose . PHP_EOL);
-$c3 = new Color( array( 'arg' => 42) );
-print( 'nb of instances: ' . Color::$verbose . PHP_EOL);
-$c->doc();
 ?>
