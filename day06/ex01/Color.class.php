@@ -64,7 +64,7 @@ class Color {
 		$new = new Color (array(
 			'red' => $this->red * $f,
 			'green' => $this->green * $f,
-			'blue' => $this->blue * $f ));
+			'blue' => $this->blue * $f));
 		return ($new);
 	}
 }

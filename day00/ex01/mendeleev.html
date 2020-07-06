@@ -8,9 +8,10 @@
 				text-align: center;
 			}
 			h1 {
-				color: #CE6100;
+				color: white;
 				text-shadow: 0 0 1px white, 0 0 0;
 				font-family: Courier New;
+				margin: 50px auto 10px;
 			}
 			table {
 				width: 1200px;
@@ -18,6 +19,7 @@
 				margin: auto;
 				padding: 15px;
 				color: white;
+				position: relative;
 			}
 			tr {
 				width: 100%;
@@ -31,7 +33,7 @@
 				padding-top: 0px;
 			}
 			th {
-				color: #CE6100;
+				color: #F56448;
 				font-family: Courier New;
 				width: 5.5%px;
 				height: 20px;
@@ -48,51 +50,54 @@
 				color: white;
 			}
 			.nonmetal {
-				border: 1px solid #FFEEDF;
+				background-color: #FFEEDF;
 			}
 			.alkalim {
-				border: 1px solid #FFD9B8;
+				background-color: #FFCD51;
 			}
 			.alkalie {
-				border: 1px solid #FFC38E;
+				background-color: #FFAD3D;
 			}
 			.rare {
-				border: 1px solid #FFB16D;
+				background-color: #ED921C;
 			}
 			.trans {
-				border: 1px solid #FF9E48;
+				background-color: #ed784c;
 			}
 			.other {
-				border: 1px solid #FF902E;
+				background-color: #E55437;
 			}
 			.halogen {
-				border: 1px solid #FF861A;
+				background-color: #FF5757;
 			}
 			.noble {
-				border: 1px solid #FF7800;
+				background-color: #CF2F0F;
 			}
 			.actinoid {
-				border: 1px solid #CE6100;
+				background-color: #b57164;
 			}
 			.name {
 				text-align: center;
+				background-color: black;
 				font-weight: bold;
 				font-size: 20px;
 				margin: 5px 0 10px;
-				color: #CE6100;
-				text-shadow: 0 0 1px white, 0 0 0;
+				color: white;
+				text-shadow: 0 0 1px black, 0 0 0;
 			}
 			.num {
 				float: left;
 				font-size: 8px;
 				line-height: 0px;
 				margin: 0;
+				color: black;
 			}
 			.mass {
 				float: right;
 				font-size: 8px;
 				line-height: 0px;
 				margin: 0;
+				color: black;
 			}
 			.imgsize {
 				width: 200px;
@@ -100,12 +105,16 @@
 				border: 1px solid white;
 				margin: auto;
 				padding: auto;
+				position: absolute;
+				top: 150px;
+				left: 400px;
 			}
 		</style>
 	</head>
 <body>
 	<h1>The periodic table</h1>
 	<table>
+		<img class="imgsize" src="https://i.pinimg.com/originals/e1/6d/49/e16d49c5465b84dc98fe26e71ac83085.jpg">
 		<tr>
 			<th class="upper">Group</th>
 			<th class="upper">1</th>
@@ -132,7 +141,12 @@
 			<td class="nonmetal"><p class="name">H</p><p class="num">1</p><p class="mass">1.008</p></td>
 			<td class="empty"></td>
 			<td class="empty"></td class="empty">
-			<td colspan="6" rowspan="3"><img class="imgsize" src="https://i.pinimg.com/originals/e1/6d/49/e16d49c5465b84dc98fe26e71ac83085.jpg"></td>
+			<td class="empty"></td>
+			<td class="empty"></td>
+			<td class="empty"></td>
+			<td class="empty"></td>
+			<td class="empty"></td>
+			<td class="empty"></td>
 			<td class="empty"></td>
 			<td class="empty"></td>
 			<td class="empty"></td>
@@ -149,7 +163,12 @@
 			<td class="alkalie"><p class="name">Be</p><p class="num">4</p><p class="mass">9.0122</p></td>
 			<td class="empty"></td class="empty">
 			<td class="empty"></td class="empty">
-			
+			<td class="empty"></td>
+			<td class="empty"></td>
+			<td class="empty"></td>
+			<td class="empty"></td>
+			<td class="empty"></td>
+			<td class="empty"></td>
 			<td class="empty"></td>
 			<td class="empty"></td class="empty">
 			<td class="nonmetal"><p class="name">B</p><p class="num">5</p><p class="mass">10.81</p></td>
@@ -166,7 +185,12 @@
 			<td class="empty"></td class="empty">
 			<td class="empty"></td class="empty">
 			<td class="empty"></td class="empty">
-			
+			<td class="empty"></td>
+			<td class="empty"></td>
+			<td class="empty"></td>
+			<td class="empty"></td>
+			<td class="empty"></td>
+			<td class="empty"></td>
 			<td class="empty"></td class="empty">
 			<td class="other"><p class="name">Al</p><p class="num">13</p><p class="mass">26.982</p></td>
 			<td class="nonmetal"><p class="name">Si</p><p class="num">14</p><p class="mass">28.085</p></td>

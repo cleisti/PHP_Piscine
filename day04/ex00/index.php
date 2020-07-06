@@ -1,10 +1,9 @@
 <?php
-header('content-type: text/plain');
 session_start();
 
-if (isset($_GET['submit']) && $_GET['submit'] === 'OK')
+if ($_GET['submit'] && $_GET['submit'] === 'OK')
 {
-	if (isset($_GET['login']) && isset($_GET['passwd']))
+	if ($_GET['login'] && $_GET['passwd'])
 	{
 		$_SESSION['login'] = $_GET['login'];
 		$_SESSION['passwd'] = $_GET['passwd'];

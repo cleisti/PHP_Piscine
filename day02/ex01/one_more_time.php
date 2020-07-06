@@ -74,10 +74,7 @@ function more_time($str)
 	if ($argc == 2)
 	{
 		if (!$arr = more_time($argv[1]))
-		{
-			echo "Wrong Format\n";
-			exit ;
-		}
+			exit("Wrong Format\n");
 		$timestr = implode(' ', $arr);
 		$time = strtotime($timestr) - 3600;
 		echo "$time\n";

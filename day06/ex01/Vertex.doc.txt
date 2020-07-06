@@ -1,0 +1,14 @@
+
+<- Vertex ----------------------------------------------------------------------
+The Vertex class represents a 3-dimensional point in space.
+
+It accepts 3 coordinates, x, y and z, and an additonal homogenous coordinate w,
+as well as a color instance from the Color.class.
+
+Attributes for this class are private -
+for getting coordinates, use the getX(), getY(), getZ(), getW() - functions,
+for setting a coordinate, use the setX($val), setY($val), setZ($val),
+setZ($val) functions.
+
+No extra method is provided in the class.
+---------------------------------------------------------------------- Vertex ->

@@ -21,13 +21,13 @@ class Color {
             $this->blue = intval($array['blue']);
         }
         if (self::$verbose)
-            print($this . ' constructed.' . PHP_EOL);
+            print($this . ' constructed' . PHP_EOL);
     }
 
     public function __destruct()
     {
         if (self::$verbose)
-            print($this . ' destructed.' . PHP_EOL);
+            print($this . ' destructed' . PHP_EOL);
     }
 
     public function __toString()
@@ -64,7 +64,7 @@ class Color {
 		$new = new Color (array(
 			'red' => $this->red * $f,
 			'green' => $this->green * $f,
-			'blue' => $this->blue * $f ));
+			'blue' => $this->blue * $f));
 		return ($new);
 	}
 }

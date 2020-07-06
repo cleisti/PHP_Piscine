@@ -1,9 +1,4 @@
 <?php
-    function error()
-    {
-        echo "ERROR\n";
-        exit;
-    }
     if ($_POST['submit'] === 'OK' && $_POST['newpw'])
     {
         $filename = '../private/passwd';
@@ -13,6 +8,7 @@
         $str = file_get_contents($filename);
         $array = unserialize($str);
         $i = 0;
+        $success = 0;
         foreach ($array as $key => $value)
         {
             if ($value['login'] === $login)
@@ -22,12 +18,16 @@
                     $array[$i]['passwd'] = $newpw;
                     $data = serialize($array);
                     file_put_contents($filename, $data);
+                    $success = 1;
                     echo "OK\n";
                     exit;
                 }
             }
             $i++;
         }
+        if (!$success)
+            exit("ERROR\n");
     }
-    error();
+    else
+        exit("ERROR\n");
 ?>

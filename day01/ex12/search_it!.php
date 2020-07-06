@@ -10,7 +10,10 @@ if ($argc > 2)
         {
             $split = preg_split('/:/', $argv[$i]);
             if (count($split) == 2)
+            {
                 $value = $split[1];
+                echo $value."\n";
+            }
         }
         $i++;
     }

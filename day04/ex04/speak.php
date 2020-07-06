@@ -1,6 +1,5 @@
 <?php
 session_start();
-date_default_timezone_set('Europe/Helsinki');
 if (!$_SESSION['logged_on_user'])
 	exit("ERROR\n");
 else

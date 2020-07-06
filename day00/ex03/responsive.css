@@ -3,7 +3,7 @@ body {
 	text-align: center;
 }
 h1 {
-	color: #CE6100;
+	color: white;
 	text-shadow: 0 0 1px white, 0 0 0;
 	font-family: Courier New;
 	font-size: 5vw;
@@ -46,39 +46,40 @@ th {
 	color: white;
 }
 .nonmetal {
-	border: 1px solid #FFEEDF;
+	background-color: #FFEEDF;
 }
 .alkalim {
-	border: 1px solid #FFD9B8;
+	background-color: #FFCD51;
 }
 .alkalie {
-	border: 1px solid #FFC38E;
+	background-color: #FFAD3D;
 }
 .rare {
-	border: 1px solid #FFB16D;
+	background-color: #ED921C;
 }
 .trans {
-	border: 1px solid #FF9E48;
+	background-color: #ed784c;
 }
 .other {
-	border: 1px solid #FF902E;
+	background-color: #E55437;
 }
 .halogen {
-	border: 1px solid #FF861A;
+	background-color: #FF5757;
 }
 .noble {
-	border: 1px solid #FF7800;
+	background-color: #CF2F0F;
 }
 .actinoid {
-	border: 1px solid #CE6100;
+	background-color: #b57164;
 }
 .name {
 	text-align: center;
+	background-color: black;
 	font-weight: bold;
 	font-size: 1.5vw;
 	margin: 5px 0 10px;
-	color: #CE6100;
-	text-shadow: 0 0 1px white, 0 0 0;
+	color: white;
+	text-shadow: 0 0 1px black, 0 0 0;
 }
 .num {
 	position: absolute;
@@ -87,6 +88,7 @@ th {
 	font-size: 0.5vw;
 	line-height: 0px;
 	margin: 3px;
+	color: black;
 }
 .mass {
 	position: absolute;
@@ -95,6 +97,7 @@ th {
 	font-size: 0.5vw;
 	line-height: 0px;
 	margin: 3px;
+	color: black;
 }
 .imgsize {
 	width: 60%;

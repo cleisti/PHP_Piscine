@@ -15,7 +15,7 @@ if (auth($_POST['login'], $_POST['passwd']) === TRUE)
 }
 else
 {
-    $_SESSION['logged_on_user'] = '';
-    echo "User not logged in\n";
+    $_SESSION['logged_on_user'] = "";
+    exit("ERROR\n");
 }
 ?>

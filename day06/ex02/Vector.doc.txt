@@ -1,0 +1,25 @@
+
+<- Vertex ----------------------------------------------------------------------
+The Vertex class represents a 3-dimensional point in space.
+
+An instance is constructed from two vertextes of Vertex.class -
+'orig' and 'dest'.
+If no 'orig' coordinates are given, the starting point will be put to 0, 0, 0.
+
+Additional functions in the class are:
+
+magnitude(), which returns the vectors length.
+normalize(), which normalizes the vector in case it isn't already.
+add(Vector $rhs), which returns the sum of the current and given vector.
+sub(Vector $rhs), which returns the difference of the current and given vector.
+opposite(), which returns the opposite of the current vector.
+scalarProduct($k), which multiplies the vector with the given scalar.
+dotProduct(Vector $rhs), which calculates the scalar multiplication of the
+current and the given vector.
+cos(Vector $rhs), which returns the cosinus angle of the current and the
+given vector.
+crossProduct(Vector $rhs), which returns a new Vector that is the cross
+multiplication of the current and a given vector (calculated with the
+right hand system).
+
+---------------------------------------------------------------------- Vertex ->
