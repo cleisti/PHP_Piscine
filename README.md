@@ -2,8 +2,8 @@
 
 An intensive 2-week project to learn web technologies (HTML, CSS, PHP, Mysql and Javascript).
 
-Day00 - HTML & CSS (90%)/n
-Day01 - Basics of PHP (82%)/n
+Day00 - HTML & CSS (90%)<br>
+Day01 - Basics of PHP (82%)<br>
 Day02 - Regex (25%)
 Day03 - Network & system administration with PHP(75%)
 Day04 - User management with PHP (100%)
