@@ -12,3 +12,5 @@ Day06 - PHP OOP basics (52%)<br>
 Day07 - PHP inheritance & interfaces (100%)<br>
 Day08 - Everything learned so far (NaN)<br>
 Day09 - Javascript basics (12%)<br>
+<br>
+Rush00 - go to https://github.com/cleisti/the_fruitshop (119%)
